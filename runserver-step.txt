@@ -1,0 +1,51 @@
+if import l'application from GitHub : 
+---------------flask--------------
+0- open bash
+1- python -m venv venv
+2- source ".\venv\Scripts\Activate"
+3- pip install Flask pandas scikit-learn numpy flask-cors
+4- export FLASK_APP=main.py
+   $env:FLASK_APP = "main.py"  $env:FLASK_ENV = "development"
+5- flask run 
+(Cela prend du temps, de 3 à 7 minutes)
+-----------------reactJs------------
+0- open bash 
+1- npm install
+2- npm run dev 
+-------------------laravel ----------
+0- open bash 
+1- composer install 
+2- php artisan key:generate
+3- copy .env.example in .env
+5- create database
+4- php artisan migrate
+5- php artisan db:seed
+6- php artisan serv
+
+_________________________________
+
+si l'application provient du dossier zip :
+
+1) Ouvrez l'application à l'éditeur et ouvrir nouveau terminal(pour lancer serveur de Flask).
+on directory "...|movie_recommendations> " lancer les commandes suivant : 
+	- $env:FLASK_APP = "main.py"
+	- flask run
+
+2) ouvrir nouveau terminal(pour lancer serveur de Laravel)
+lancer les commandes suivant : 
+	- cd laravel_frontend
+	- php artisan serv
+
+3) ouvrir nouveau terminal(pour lancer serveur de React)
+lancer les commandes suivant : 
+	- cd react_frontend
+	- npm run dev
+
+et ouvrez l'url donner par exemple : http://localhost:5173/
+
+
+
+
+
+
+
